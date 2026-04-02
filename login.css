@@ -1,0 +1,80 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#e23744,#ff6a00);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CONTAINER */
+.auth-box {
+    width: 900px;
+    max-width: 95%;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    display: flex;
+}
+
+/* LEFT SIDE */
+.auth-left {
+    background: linear-gradient(135deg,#e23744,#ff6a00);
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.auth-left h2 {
+    font-weight: 800;
+}
+
+/* RIGHT SIDE */
+.auth-right {
+    flex: 1;
+    padding: 40px;
+}
+
+/* FORM */
+.form-control {
+    border-radius: 30px;
+    padding: 12px 20px;
+}
+
+.btn-main {
+    background: #e23744;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    width: 100%;
+    font-weight: 600;
+}
+
+/* TOGGLE */
+.toggle-text {
+    cursor: pointer;
+    color: #e23744;
+    font-weight: 600;
+}
+
+/* HIDE REGISTER INITIALLY */
+#registerForm {
+    display: none;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .auth-box {
+        flex-direction: column;
+    }
+    .auth-left {
+        display: none;
+    }
+}
